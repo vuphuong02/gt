@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+ <head>
+	<meta charset = "utf-8">
+	<title> Mục 1 </title>
+	<style type = "text/css">
+		* {
+			box-sizing: inherit;
+			padding: 0;
+			margin: 0;
+		}
+
+		html {
+			font-size: 62.5%;
+			line-height: 1.6rem;
+			font-family: 'Roboto', sans-serif;
+			box-sizing: border-box;
+		}
+
+		.text-color {
+			color: var(--text-color);
+		}
+
+		.list-style--none {
+			list-style: none;
+		}
+
+		/* header */
+
+		.header {
+			
+			position: fixed;
+			width: 100%;
+			background-color: #dcdcdc;
+			display: flex;
+			justify-content: space-between;
+			height: 9rem;
+			transition: 0.5s;
+			/* border-bottom: 1px solid #b9b9b9; */
+		}
+
+		.header__logo {
+			margin: 0  0 0 10rem;
+		}
+
+		.logo {
+			width: 11rem;
+			height: 11rem;
+		}
+
+		.header__navbar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.navbar__menu {
+			display: flex;
+			/* flex-direction: row; */
+			width: 100%;
+			height: 100%;
+		}
+
+		.navbar__item {
+			display: flex;
+			/* align-items: center; */
+			height: calc(100% - 2rem);
+			margin-top: 2rem;
+			padding: 0 4rem;
+			text-decoration: none;
+			transition: 0.9s;
+		}
+
+		.navbar__item-link {
+			text-decoration: none;
+			color: #1133ab;
+			margin-top: 1.7rem;
+		}
+
+		.active .navbar__item-link {
+			color: #F8781C;
+			margin-top: 1rem;
+			transition: 0.7s;
+		}
+
+		.border--none{
+			border: none !important;
+		}
+
+		a:hover {
+			color: #F8781C;
+		}
+
+		.navbar__item {
+			font-size: 1.6rem;
+			font-weight: 600;
+		}
+		.body {
+			padding-top: 12rem;
+			padding-left: 6rem;
+			padding-bottom: 5rem;
+			width: 100%;
+			height: auto;
+			background-color: #f0f2f5;
+		}
+		.text_header {
+			color: #1133ab;
+			font-size: 2.6rem;
+			font-weight: 600;
+			font-family: 'Roboto', sans-serif;
+		}
+		.text_title {
+			padding-left: 0.8rem;
+			padding-top: 2rem;
+			color: #1133ab;
+			font-size: 2rem;
+			font-weight: 550;
+			font-family: 'Roboto', sans-serif;
+		}
+		.text_content {
+			padding-left: 1.4rem;
+			padding-top: 1.5rem;
+			color: #1133ab;
+			font-size: 1.3rem;
+			font-weight: 0;
+			font-family: 'Roboto', sans-serif;
+		}
+		.pic {
+			padding-top: 2rem;
+			vertical-align:top;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 86%;
+			height: auto;
+		}
+		ul li {			
+			padding-top: 0.8rem;
+			color: #1133ab;
+			font-size: 1.5rem;
+			font-weight: 500;
+			font-family: 'Roboto', sans-serif;
+			margin: 8px;
+			}
+</style>
+</head>
+ 
+<body> 
+	<div class="header">
+        <div class="header__logo">
+            <img class="logo" src="logo.png">
+            <!--  -->
+        </div>
+        <div class="header__navbar">    
+            <ul class="navbar__menu">
+                <li class="navbar__item active list-style--none">
+                    <a href="#" class="navbar__item-link">Trang chủ</a>
+                </li>
+                <li class="navbar__item list-style--none">
+                    <a href="#" class="navbar__item-link">Giới thiệu</a>
+                </li>
+                <li class="navbar__item list-style--none">
+                    <a href="#" class="navbar__item-link">Blog</a>
+                </li>
+                <li class="navbar__item list-style--none">
+                    <a href="#" class="navbar__item-link">Đặt tour</a>
+                </li>
+                <li class="navbar__item list-style--none">
+                    <a href="#" class="navbar__item-link">Ý kiến khách hàng</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<div class = "body">
+		<div class = "text_header">
+			Giới thiệu về Hội An
+		</div>
+		<div class = "text_title">
+			1. Vị trí địa lý
+		</div>
+		<div class = "text_content">
+			Thành phố Hội An thuộc tỉnh Quảng Nam có diện tích khoảng 63,55 km², là trọng tâm của cụm động lực phía Bắc vùng Đông của tỉnh Quảng Nam, 
+			có quan hệ mật thiết với thành phố Đà Nẵng - vừa là đô thị lớn nhất Miền Trung, vừa là một trong những trung tâm kinh tế lớn của cả nước;
+			là điểm đầu tuyến của hành lang Bắc trong chiến lược kết nối phát triển Vùng Đông- Vùng Tây tỉnh Quảng Nam.
+		</div>
+		<div class = "pic">
+			<img src = "gtpic1.jpg">
+		</div>
+		<div class = "text_content">
+			Phố cổ Hội An là một trong những thương cảng sầm uất nhất Đông Nam Á vào thế kỷ 17, 18. Nơi đây là điểm gặp gỡ và trao đổi hàng hóa của các thuyền buôn phương tây, Trung Quốc và Nhật Bản. 
+			Cùng là nơi giao thoa giữa các nền văn hóa Nhật, Hoa, Việt còn được lưu giữ đến ngày nay. Phố cổ Hội An nằm bên cạnh dòng sông Thu Bồn thuộc thành phố Hội An, tỉnh Quảng Nam. Năm 1999, Tổ chức UNESCO đã ghi tên Hội An vào danh mục các di sản Văn hóa thế giới và vào ngày 24/8/2000.
+		</div>
+		<div class = "text_title">
+			2. Miêu tả phố cổ Hội An
+		</div>
+		<ul>
+			<li>	
+				Hội An với những kiến trúc truyền thống
+			</li>
+		</ul>
+		<div class = "pic">
+			<img src = "gtpic2.jpg">
+		</div>
+		<div class = "text_content">
+			Hội An nổi tiếng bởi vẻ đẹp kiến trúc truyền thống, hài hòa của những ngôi nhà, bức tường và cả những con đường. 
+			Cùng với bao biến cố thăng trầm của lịch sử, phố cổ Hội An vẫn giữ những nét đẹp xưa cổ trầm mặc rêu phong trong từng mái ngói, 
+			viên gạch, hàng cây… như chính nét bình dị trong tính cách, tâm hồn thuần hậu, chân chất của người dân địa phương.
+		</div>
+		<ul>
+			<li>	
+				Kiến trúc Phố Cổ Hội An
+			</li>
+		</ul>
+		<div class = "pic">
+			<img style width = "93%"; src = "gtpic3.jpg">
+		</div>
+		<div class = "text_content">
+			Kiểu nhà ở phổ biến nhất ở Hội An chính là những ngôi nhà phố một hoặc hai tầng với đặc trưng chiều ngang hẹp, chiều sâu rất dài tạo nên kiểu nhà hình ống. 
+			Những vật liệu chính dùng để xây dựng nhà ở đây đều có sức chịu lực và độ bền cao do đặc điểm khí hậu khắc nghiệt và bão lụt hàng năm của vùng này. 
+			Thông thường, các ngôi nhà có kết cấu kiểu nhà khung gỗ, hai bên có tường gạch ngăn cách. Khuôn viên trung bình của các ngôi nhà có chiều ngang khoảng 4 đến 8 mét, chiều sâu khoảng 10 đến 40 mét, biến thiên theo từng tuyến phố. 
+			Bố cục mặt bằng phổ biến của những ngôi nhà ở đây gồm: vỉa hè, hiên, nhà chính, nhà phụ, hiên, nhà cầu và sân trong, hiên, nhà sau ba gian, vườn sau.
+		</div>
+		<ul>
+			<li>	
+				Mái ngói
+			</li>
+		</ul>
+		<div class = "pic">
+			<img style width = "93%"; src = "gtpic4.jpg">
+		</div>
+		<div class = "text_content">
+			Những ngôi nhà ở Hội An hầu hết được làm theo dạng hai mái, đa số nhà chính và nhà phụ không chung một mái mà là hai nếp mái kế tiếp nhau. Rất ít trường hợp mái nhà chính phủ lên cả phần nhà phụ. Ngược lại, đa số nhà cầu được lợp theo kiểu bốn mái. 
+			Trên mặt bằng tổng thể thì nhà trước, nhà cầu và nhà sau được lợp bằng những mái riêng biệt. Ngói ở Hội An là loại ngói làm từ đất, mỏng, nung thô, mang hình vuông, mỗi cạnh khoảng 22cm và có dạng hơi cong. Khi lợp, đầu tiên người ta xếp một hàng ngói ngửa lên và sau đó tiếp tới một hàng ngói úp xuống.
+		</div>
+		<ul>
+			<li>	
+				Đường phố
+			</li>
+		</ul>
+		<div class = "pic">
+			<img src = "gtpic5.jpg">
+		</div>
+		<div class = "text_content">
+			Đường phố ở khu phố cổ được bố trí ngang dọc theo kiểu bàn cờ với những con phố ngắn và đẹp, uốn lượn, ôm lấy những ngôi nhà. 
+			Dạo bước chân qua từng con phố nhỏ xinh và yên bình ấy, du khách không chỉ được thưởng thức những món ăn ngon mà còn thấy được một phần cuộc sống sinh hoạt hàng ngày của người dân phố Hội, một cuộc sống yên bình, giản dị.
+		</div>
+		<div class = "text_title">
+			3. Du lịch phố cổ Hội An lý tưởng nhất vào thời gian nào?
+		</div>
+		<div class = "text_content">
+			Du lịch phố cổ Hội An lý tưởng nhất là từ tháng 2 đến tháng 4 hàng năm bởi vào thời gian này tiết trời xuân mát mẻ, Hội An ít mưa & có nắng nhẹ rất thích hợp để khách du lịch đến tham quan, khám phá.
+		</div>
+		<div class = "pic">
+			<img style width = "93%"; src = "gtpic6.jpg">
+		</div>
+		<div class = "text_content">
+			Tháng 5 đến tháng 8 nắng đẹp, tuy khoảng thời gian tháng 5 - tháng 6 thời tiết một số ngày nắng gắt cần chịu khó một chút nhưng bù lại đây là thời điểm tuyệt vời để lặn ngắm san hô tại Cù Lao Chàm. 
+			Bên cạnh đó, nếu có kế hoạch du lịch Hội An vào các tháng khác, bạn hãy chủ động theo dõi dự báo thời tiết để có chuyến đi thuận lợi nhất!
+		</div>
+	</div>
+</body>
+ 	<script> 
+		let navbar__item = document.querySelectorAll('.navbar__item');
+		for (let i = 0; i < navbar__item.length; i++) {
+		navbar__item[i].onclick = function() {
+			let j = 0;
+			while (j < navbar__item.length) {
+				navbar__item[j++].className = 'navbar__item';
+			}
+			navbar__item[i].className = 'navbar__item active';
+		}
+	};
+	</script>
+</html>
